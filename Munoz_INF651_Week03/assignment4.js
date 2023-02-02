@@ -105,7 +105,6 @@ const question5 = (myString) => {
         if (myString.charAt(i) === ' ') continue;
         myValue += myString.charAt(i).toLowerCase();
     }
-    myValue = myValue.trim();
     /////////// create your loop above this line ///////////
     return myValue;
 };
