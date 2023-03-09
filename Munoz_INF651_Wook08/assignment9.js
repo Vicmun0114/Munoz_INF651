@@ -40,8 +40,8 @@ const arrayOfNums = [10, 20, 27];
 
 function getTotal(array) {
     let total = 0;
-    for (let i = 0; i < array.length; i++) {
-        total += array[i];
+    for (let i of array) {
+        total += i;
     }
     return total;
 }
@@ -56,8 +56,8 @@ const numArray = [2, 5, 7, 8, 14, 19, 22];
 
 function getEvens(array) {
     const newArray = [];
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] % 2 === 0) newArray.push(array[i]);
+    for (let i of array) {
+        if (i % 2 === 0) newArray.push(i);
     }
     return newArray;
 }
@@ -80,7 +80,6 @@ const arrayOfObjs = [
 function getObjOdds(array) {
     const newArray = [];
     for (let obj in array) {
-        // newArray.push(array[obj] % 2 !== 0);
         if (array[obj].number % 2 !== 0) newArray.push(array[obj].number);
     }
     return newArray;
